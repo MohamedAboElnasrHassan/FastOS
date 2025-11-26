@@ -1,6 +1,6 @@
 {
-  "appTitle": "FastOS Setup Wizard",
-  "appVersion": "1.0",
+  "appTitle": "FastOS Set up Wizard",
+  "appVersion": "2.0",
   "githubConfigURL": "",
   
   "theme": {
@@ -110,3 +110,4 @@
     "title": "HOST SYSTEM INFO"
   }
 }
+
