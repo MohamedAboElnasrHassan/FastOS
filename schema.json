@@ -1,0 +1,86 @@
+{
+  "appTitle": "FastOS Setup Wizard",
+  "appVersion": "1.0",
+  "githubConfigURL": "",
+  
+  "vmDefaults": {
+    "vmPath": "C:\\Hyper-V\\VMs",
+    "switchName": "Default Switch",
+    "generation": 2,
+    "secureBoot": false,
+    "dynamicMemory": false
+  },
+  
+  "resources": {
+    "minRAM": 2,
+    "defaultRAM": 4,
+    "minCPU": 1,
+    "defaultCPU": 2,
+    "minDisk": 20,
+    "defaultDisk": 50
+  },
+  
+  "network": {
+    "basePort": 8054,
+    "portOffset": 1
+  },
+  
+  "paths": {
+    "isoTemplate": ".\\fastos\\clients\\client-{id}\\client-{id}.iso"
+  },
+  
+  "pages": {
+    "page1": {
+      "title": "Welcome",
+      "description": "This wizard will guide you through the deployment of a new FastOS Virtual Machine.",
+      "instruction": "Click 'Next' to begin configuration."
+    },
+    "page2": {
+      "title": "Client Information"
+    },
+    "page3": {
+      "title": "VM Resources"
+    },
+    "page4": {
+      "title": "Network & Software"
+    },
+    "page5": {
+      "title": "Review & Install",
+      "summaryTemplate": "INSTALLATION SUMMARY\n========================================\nVM Name:      FastOS-Client-{clientID}\nCompany:      {company}\nISO Path:     {isoPath}\n----------------------------------------\nMemory:       {ram} GB\nCPU Cores:    {cpu}\nVirtual Disk: {disk} GB\nDatabase:     {database}\nPort:         {port}\n========================================\n\nReady to install. Click INSTALL to begin."
+    }
+  },
+  
+  "buttons": {
+    "next": "Next >",
+    "back": "< Back",
+    "cancel": "Cancel",
+    "install": "INSTALL",
+    "close": "Close"
+  },
+  
+  "messages": {
+    "success": {
+      "vmCreated": "VM Created Successfully!\nStart it now?",
+      "installComplete": "✅ SUCCESS: Installation Complete!"
+    },
+    "errors": {
+      "isoNotFound": "ISO file not found: {path}",
+      "installFailed": "Installation Failed"
+    },
+    "progress": {
+      "validatingISO": "Validating ISO file...",
+      "removingExisting": "Removing existing VM...",
+      "creatingDirectory": "Creating VM directory...",
+      "creatingVM": "Creating Virtual Machine...",
+      "configuringCPU": "Configuring CPU...",
+      "creatingDisk": "Creating virtual disk ({size}GB)...",
+      "attachingISO": "Attaching ISO...",
+      "configuringBoot": "Configuring boot order...",
+      "complete": "Installation complete!"
+    }
+  },
+  
+  "systemInfo": {
+    "title": "HOST SYSTEM INFO"
+  }
+}
