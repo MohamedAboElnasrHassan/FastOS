@@ -3,6 +3,32 @@
   "appVersion": "1.0",
   "githubConfigURL": "",
   
+  "theme": {
+    "primaryColor": "#0078D7",
+    "primaryHover": "#005A9E",
+    "secondaryColor": "#F3F3F3",
+    "accentColor": "#E1F5FE",
+    "successColor": "#4CAF50",
+    "errorColor": "#F44336",
+    "warningColor": "#FF9800",
+    "textPrimary": "#000000",
+    "textSecondary": "#555555",
+    "borderColor": "#DDDDDD"
+  },
+  
+  "window": {
+    "title": "FastOS Setup Wizard",
+    "width": 950,
+    "height": 650,
+    "resizable": false
+  },
+  
+  "header": {
+    "backgroundColor": "#0078D7",
+    "titleColor": "#FFFFFF",
+    "subtitleColor": "#E6E6E6"
+  },
+  
   "vmDefaults": {
     "vmPath": "C:\\Hyper-V\\VMs",
     "switchName": "Default Switch",
